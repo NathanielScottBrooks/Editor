@@ -1,0 +1,139 @@
+﻿Entorno al principio de la compilación:
+ALLUSERSPROFILE = C:\ProgramData
+APPDATA = C:\Users\natha\AppData\Roaming
+CommonProgramFiles = C:\Program Files (x86)\Common Files
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+CommonProgramW6432 = C:\Program Files\Common Files
+COMPUTERNAME = DESKTOP-6I518S3
+ComSpec = C:\WINDOWS\system32\cmd.exe
+DriverData = C:\Windows\System32\Drivers\DriverData
+FORCEIDENTITYDEVICEFLOW = True
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING = Default
+HOMEDRIVE = C:
+HOMEPATH = \Users\natha
+LOCALAPPDATA = C:\Users\natha\AppData\Local
+LOGONSERVER = \\DESKTOP-6I518S3
+MSBuildLoadMicrosoftTargetsReadOnly = true
+NUMBER_OF_PROCESSORS = 4
+OneDrive = C:\Users\natha\OneDrive
+OS = Windows_NT
+Path = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\MATLAB\R2018a\bin;C:\Users\natha\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\natha\AppData\Local\Programs\Python\Python37\;C:\Users\natha\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PkgDefApplicationConfigFile = C:\Users\natha\AppData\Local\Microsoft\VisualStudio\15.0_53d67e9f\devenv.exe.config
+PROCESSOR_ARCHITECTURE = x86
+PROCESSOR_ARCHITEW6432 = AMD64
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+PROCESSOR_LEVEL = 6
+PROCESSOR_REVISION = 8e09
+ProgramData = C:\ProgramData
+ProgramFiles = C:\Program Files (x86)
+ProgramFiles(x86) = C:\Program Files (x86)
+ProgramW6432 = C:\Program Files
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC = C:\Users\Public
+SESSIONNAME = Console
+SystemDrive = C:
+SystemRoot = C:\WINDOWS
+TEMP = C:\Users\natha\AppData\Local\Temp
+TMP = C:\Users\natha\AppData\Local\Temp
+USERDOMAIN = DESKTOP-6I518S3
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-6I518S3
+USERNAME = Nathaniel Brooks
+USERPROFILE = C:\Users\natha
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+VisualStudioDir = C:\Users\natha\Documents\Visual Studio 2017
+VisualStudioEdition = Microsoft Visual Studio Community 2017
+VisualStudioVersion = 15.0
+VSAPPIDDIR = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\
+VSAPPIDNAME = devenv.exe
+VSLANG = 3082
+VSSKUEDITION = Community
+windir = C:\WINDOWS
+
+  ComboBox_c.cpp
+c:\users\natha\documents\visual studio 2017\win32oop - template\win32oop - template\combobox_c.cpp(37): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "stdafx.h"' al código fuente?
+  DialogProcedures.cpp
+c:\users\natha\documents\visual studio 2017\win32oop - template\win32oop - template\dialogprocedures.cpp(75): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "stdafx.h"' al código fuente?
+  MainWindowProcedure.cpp
+c:\users\natha\documents\visual studio 2017\win32oop - template\win32oop - template\mainwindowprocedure.cpp(217): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "stdafx.h"' al código fuente?
+  MenuBar_c.cpp
+c:\users\natha\documents\visual studio 2017\win32oop - template\win32oop - template\menubar_c.cpp(69): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "stdafx.h"' al código fuente?
+  StatusBar_c.cpp
+c:\users\natha\documents\visual studio 2017\win32oop - template\win32oop - template\statusbar_c.cpp(53): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "stdafx.h"' al código fuente?
+  Toolbar_c.cpp
+c:\users\natha\documents\visual studio 2017\win32oop - template\win32oop - template\toolbar_c.cpp(59): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "stdafx.h"' al código fuente?
+  Window_c.cpp
+c:\users\natha\documents\visual studio 2017\win32oop - template\win32oop - template\window_c.cpp(109): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "stdafx.h"' al código fuente?
+  wWinMain.cpp
+c:\users\natha\documents\visual studio 2017\win32oop - template\win32oop - template\wwinmain.cpp(47): fatal error C1010: final de archivo inesperado al buscar la directiva de encabezado precompilado. Compruebe si olvidó agregar '#include "stdafx.h"' al código fuente?
+  Generando código...
+
+Resumen del rendimiento del proyecto:
+     1748 ms C:\Users\natha\Documents\Visual Studio 2017\Win32OOP - Template\Win32OOP - Template\Win32OOP - Template.vcxproj   1 llamadas
+               1748 ms Build                                      1 llamadas
+
+Resumen del rendimiento de destino:
+        0 ms ResolveReferences                          1 llamadas
+        0 ms AfterResolveReferences                     1 llamadas
+        0 ms SelectClCompile                            1 llamadas
+        0 ms BeforeBuildGenerateSources                 1 llamadas
+        0 ms PreBuildEvent                              1 llamadas
+        0 ms _SelectedFiles                             1 llamadas
+        0 ms _Xsd                                       1 llamadas
+        0 ms ComputeMIDLGeneratedCompileInputs          1 llamadas
+        0 ms AfterMidl                                  1 llamadas
+        0 ms _Midl                                      1 llamadas
+        0 ms AfterBuildGenerateSources                  1 llamadas
+        0 ms AfterBuildGenerateSourcesEvent             1 llamadas
+        0 ms _BuildGenerateSourcesAction                1 llamadas
+        0 ms BuildGenerateSources                       1 llamadas
+        0 ms BuildCompileTraverse                       1 llamadas
+        0 ms BeforeClCompile                            1 llamadas
+        0 ms ResolveAssemblyReferences                  1 llamadas
+        0 ms ExpandSDKReferences                        1 llamadas
+        0 ms SelectCustomBuild                          1 llamadas
+        0 ms SetCABuildNativeEnvironmentVariables       1 llamadas
+        0 ms BeforeResolveReferences                    1 llamadas
+        0 ms PlatformPrepareForBuild                    1 llamadas
+        0 ms SetBuildDefaultEnvironmentVariables        1 llamadas
+        0 ms PrepareProjectReferences                   1 llamadas
+        0 ms ResolveSDKReferences                       1 llamadas
+        1 ms BuildGenerateSourcesTraverse               1 llamadas
+        1 ms GetResolvedWinMD                           1 llamadas
+        1 ms GetReferenceAssemblyPaths                  1 llamadas
+        1 ms _CheckWindowsSDKInstalled                  1 llamadas
+        1 ms ComputeCLInputPDBName                      1 llamadas
+        1 ms ComputeReferenceCLInput                    1 llamadas
+        2 ms GetFrameworkPaths                          1 llamadas
+        4 ms MakeDirsForMidl                            1 llamadas
+        5 ms _SplitProjectReferencesByFileExistence     1 llamadas
+        5 ms _PrepareForReferenceResolution             1 llamadas
+        5 ms MakeDirsForCl                              1 llamadas
+       10 ms WarnCompileDuplicatedFilename              1 llamadas
+       10 ms FixupCLCompileOptions                      1 llamadas
+       10 ms InitializeBuildStatus                      1 llamadas
+       11 ms SetTelemetryEnvironmentVariables           1 llamadas
+       11 ms _GetProjectReferenceTargetFrameworkProperties   1 llamadas
+       12 ms AssignProjectConfiguration                 1 llamadas
+       18 ms ResolveProjectReferences                   1 llamadas
+       18 ms CopyFileToFolders                          1 llamadas
+       20 ms _HandlePackageFileConflicts                1 llamadas
+       20 ms _PrepareForBuild                           1 llamadas
+       33 ms PrepareForBuild                            1 llamadas
+       86 ms _CheckForInvalidConfigurationAndPlatform   1 llamadas
+     1414 ms ClCompile                                  1 llamadas
+
+Resumen del rendimiento de la tarea:
+        1 ms ReadLinesFromFile                          1 llamadas
+        2 ms WriteLinesToFile                           1 llamadas
+        4 ms Touch                                      1 llamadas
+        5 ms SetEnv                                     8 llamadas
+        6 ms MSBuild                                    1 llamadas
+       11 ms AssignProjectConfiguration                 1 llamadas
+       12 ms Delete                                     1 llamadas
+       18 ms GetOutOfDateItems                          1 llamadas
+       18 ms ResolvePackageFileConflicts                1 llamadas
+       28 ms Message                                    2 llamadas
+       28 ms MakeDir                                    4 llamadas
+     1400 ms CL                                         1 llamadas

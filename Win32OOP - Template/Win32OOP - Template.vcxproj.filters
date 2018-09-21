@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{c25f145d-b111-4b27-ab46-c1a4bc3ce0f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Assets">
+      <UniqueIdentifier>{e3db93e1-a808-439f-af49-9f0a77156832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Headers">
+      <UniqueIdentifier>{8328f491-6d1c-4cb7-a197-a5c90d8e7d64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ComboBox_c.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogProcedures.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindowProcedure.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuBar_c.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBar_c.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Toolbar_c.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Window_c.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="wWinMain.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorWinProc.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>Source</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\MinMaxClose.bmp">
+      <Filter>Source\Assets</Filter>
+    </Image>
+    <Image Include="Assets\MinRestoreClosec.bmp">
+      <Filter>Source\Assets</Filter>
+    </Image>
+    <Image Include="Assets\ToolbarDarkTheme.bmp">
+      <Filter>Source\Assets</Filter>
+    </Image>
+    <Image Include="Assets\ToolbarLightTheme.bmp">
+      <Filter>Source\Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\ComboBox_c.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\MenuBar_c.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Prototypes.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Resource.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Scrollbar Class.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\StatusBar_c.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Structures.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Toolbar_c.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Window_c.h">
+      <Filter>Source\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="WIn32 - Template.exe.manifest">
+      <Filter>Source</Filter>
+    </Manifest>
+  </ItemGroup>
+</Project>
