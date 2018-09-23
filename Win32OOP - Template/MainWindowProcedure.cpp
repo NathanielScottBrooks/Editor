@@ -7,6 +7,7 @@
 #include <Windows.h>
 #include <Windowsx.h>
 #include <CommCtrl.h>
+#include <WinUser.h>
 
 #pragma comment(lib, "ComCtl32.lib")
 
@@ -32,6 +33,7 @@ LRESULT _stdcall MainProcedure(HWND handle, unsigned int message,
     static HWND mainHorzScroll;
     static HWND mainVertScroll;
     static RECT editorConfines;
+    static HWND editorRearBackdrop;
 
     switch (message) {
 
@@ -178,11 +180,17 @@ LRESULT _stdcall MainProcedure(HWND handle, unsigned int message,
             toolPanel.AddButtons(mainToolBtns, 6);
             mainMenu.AddButtons(mainMenuBtns, 5);
 
+            editorRearBackdrop = CreateWindowExW(0, WC_STATICW, NULL,
+                WS_CHILD | WS_VISIBLE, 0, 0, 0, 0,
+                handle, NULL, instance, NULL);
+
             leftMargin = ::CreateWindowExW(NULL, WC_STATICW,
                 L"", SS_NOTIFY | WS_CHILD | WS_VISIBLE,
                 0, 0, 0, 0, handle, nullptr, instance, nullptr);
             editorPanel.ConstructClass(instance, EditorWinProc, L"editPanel",
-                nullptr, nullptr, nullptr, ::LoadCursorW(instance, IDC_IBEAM),
+                nullptr, nullptr, nullptr, reinterpret_cast<HCURSOR>(
+                ::LoadImageW(nullptr, MAKEINTRESOURCEW(IDC_IBEAM),
+                IMAGE_CURSOR, 0, 0, LR_SHARED)),
                 CreateSolidBrush(0x1E1E1E), NULL);
             editorPanel.Create(SW_SHOW, NULL, L"editPanel", L"",
                 WS_VISIBLE | WS_CHILD | WS_TABSTOP, 0, 0, 0, 0, handle,
@@ -275,13 +283,15 @@ LRESULT _stdcall MainProcedure(HWND handle, unsigned int message,
             ::MoveWindow(mainStatusBar, 0, (mainWinClient.bottom +
                 mainStatusBar.GetHeight()), mainWinClient.right,
                 mainStatusBar.GetHeight(), TRUE);
+
             ::MoveWindow(toolPanel, 0, mainMenu.GetHeight() +
                 editContextualBar.GetHeight() + captionAreaDivider,
                 0, toolPanel.GetHeight(), TRUE);
+
             const int bottomTabArea = mainStatusBar.GetHeight(); //Replace later with tab control edminsions
             ::MoveWindow(leftMargin, toolPanel.GetWidth(),
-                (mainFileToolbar.GetHeight() + editContextualBar.GetHeight() + captionAreaDivider),
-                captionAreaDivider,
+                (mainFileToolbar.GetHeight() + editContextualBar.GetHeight() +
+                captionAreaDivider), captionAreaDivider,
                 mainWinClient.bottom - (mainStatusBar.GetHeight() +
                 mainFileToolbar.GetHeight() + editContextualBar.GetHeight() +
                 bottomTabArea + captionAreaDivider),
@@ -291,25 +301,34 @@ LRESULT _stdcall MainProcedure(HWND handle, unsigned int message,
 
             editorConfines.top = (mainFileToolbar.GetHeight() +
                 editContextualBar.GetHeight() + captionAreaDivider);
-            editorConfines.bottom = mainWinClient.bottom - (mainStatusBar.GetHeight() +
-                bottomTabArea + captionAreaDivider);
+            editorConfines.bottom = mainWinClient.bottom -
+                (mainStatusBar.GetHeight() + bottomTabArea +
+                captionAreaDivider);
             editorConfines.left = toolPanel.GetWidth() + captionAreaDivider;
             editorConfines.right = (mainWinClient.right - rightTabArea -
                 captionAreaDivider);
-            ::MoveWindow(editorPanel, editorConfines.left, editorConfines.top,
-                editorConfines.right - editorConfines.left,
-                editorConfines.bottom - editorConfines.top, TRUE);
+
+            //::MoveWindow(editorRearBackdrop, editorConfines.left, editorConfines.top,
+            //    editorConfines.right - editorConfines.left,
+            //    editorConfines.bottom - editorConfines.top, TRUE);
 
             ::MoveWindow(mainHorzScroll, toolPanel.GetWidth(),
                 (mainWinClient.bottom - (mainStatusBar.GetHeight() * 2 +
-                captionAreaDivider)), mainWinClient.right -
-                (rightTabArea +  toolPanel.GetWidth() +
-                captionAreaDivider), captionAreaDivider, TRUE);
+                    captionAreaDivider)), mainWinClient.right -
+                    (rightTabArea + toolPanel.GetWidth() +
+                        captionAreaDivider), captionAreaDivider, TRUE);
             ::MoveWindow(mainVertScroll, (mainWinClient.right - rightTabArea -
                 captionAreaDivider), editorConfines.top, captionAreaDivider,
                 mainWinClient.bottom - (mainStatusBar.GetHeight() +
-                mainFileToolbar.GetHeight() + editContextualBar.GetHeight() +
-                bottomTabArea + captionAreaDivider), TRUE);
+                    mainFileToolbar.GetHeight() + editContextualBar.GetHeight() +
+                    bottomTabArea + captionAreaDivider), TRUE);
+
+            ::MoveWindow(editorPanel, editorConfines.left, editorConfines.top,
+                editorConfines.right - editorConfines.left,
+                editorConfines.bottom - editorConfines.top, TRUE);
+            //::SetWindowPos(toolPanel, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
+            //::SetWindowPos(editorPanel, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
+            ::BringWindowToTop(editorPanel);
 
             break;
 
